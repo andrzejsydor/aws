@@ -5,6 +5,6 @@ terraform.tfstate.backup
 .terraform
 
 
-Terraform/Lambda/lambda_function_payload.zip
-Terraform/Lambda/response.json
+lambda_function_payload.zip
+response.json
 
