@@ -1,10 +1,10 @@
 
-Terraform/EC2/.terraform/
-
-Terraform/EC2/terraform.tfstate
-Terraform/EC2/terraform.tfstate.backup
-
 terraform.tfstate
 terraform.tfstate.backup
 
 .terraform
+
+
+Terraform/Lambda/lambda_function_payload.zip
+Terraform/Lambda/response.json
+
