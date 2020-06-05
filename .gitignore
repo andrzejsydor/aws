@@ -8,3 +8,15 @@ terraform.tfstate.backup
 lambda_function_payload.zip
 response.json
 
+
+# CDK
+
+node_modules
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out
+
+# Parcel build directories
+.cache
+.build 
