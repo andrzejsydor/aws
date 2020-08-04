@@ -4,6 +4,12 @@ terraform apply -auto-approve
 terraform destroy -auto-approve
 ```
 
+https://github.com/liamg/tfsec
+
+```
+docker run --rm -it -v "$(pwd):/src" liamg/tfsec /src
+```
+
 ```
 !#sh
 TER_VER=`curl -s https://api.github.com/repos/hashicorp/terraform/releases/latest | grep tag_name | cut -d: -f2 | tr -d \"\,\v | awk '{$1=$1};1'`
