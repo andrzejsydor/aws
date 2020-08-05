@@ -1,11 +1,3 @@
-# https://www.terraform.io/docs/providers/aws/r/waf_xss_match_set.html
-# https://www.terraform.io/docs/providers/aws/r/waf_rule.html
-# https://www.terraform.io/docs/providers/aws/r/waf_rule_group.html
-# https://www.terraform.io/docs/providers/aws/r/waf_web_acl.html
-
-# resource "aws_waf_web_acl" "main" {
-# }
-
 resource "aws_waf_web_acl" "waf_acl" {
   depends_on  = [aws_waf_xss_match_set.xss_match_set, aws_waf_rule.wafrule]
   name        = "xss_WebACL_tf"
