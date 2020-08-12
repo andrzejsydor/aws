@@ -1,0 +1,23 @@
+{
+    "Parameters": {
+        "DeletionPolicyParametr": {
+            "Default": "Delete",
+            "Description": "DeletionPolicy name",
+            "Type": "String",
+            "AllowedValues": [
+                "Delete",
+                "Retain",
+                "Snapshot"
+            ]
+        }
+    },
+    "Resources": {
+        "HelloBucket": {
+            "Type": "AWS::S3::Bucket",
+            "DeletionPolicy": "Delete",
+            "Properties": {
+                "AccessControl": "Private"
+            }
+        }
+    }
+}
