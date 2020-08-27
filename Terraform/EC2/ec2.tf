@@ -18,6 +18,7 @@ resource "aws_instance" "ec2_adm" {
   tags = {
     Name = "EC2-${count.index}"
     Type = "EC2"
-    BELONG = "AS"
+    Project = "test"
+    Environment = "sandbox"
   }
 }
